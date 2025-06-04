@@ -10,6 +10,6 @@ npm install
 npm run dev
 ```
 
-**Step 4.** Open up your browser and go to <code><a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer">http://localhost:3000/</a></code>.
+**Step 4.** Open up your browser and go to &ensp;[<kbd> <br> http://localhost:3000/ <br> </kbd>](http://localhost:3000/)&ensp;
 
 **Step 5.** Enter any random password to see the result! Then enter `1234` to access the main content!
