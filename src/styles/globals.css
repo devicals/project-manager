@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Anka+Coder+Condensed:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --tui-bg: rgb(65, 68, 88);
+  --tui-accent: rgb(243, 127, 151);
+  --tui-text: rgb(255, 255, 255);
+  --tui-text-muted: rgb(200, 200, 200);
+  --terminal-bg: rgb(0, 0, 0);
+  --terminal-text: rgb(0, 255, 0);
+}
+
+/* Font Classes */
+.font-anka {
+  font-family: 'Anka/Coder Condensed', 'Cascadia Code', monospace;
+}
+
+.font-terminal {
+  font-family: monospace;
+}
+
+/* TUI Theme Classes */
+.tui-bg {
+  background-color: var(--tui-bg);
+}
+
+.tui-accent {
+  color: var(--tui-accent);
+}
+
+.tui-accent-bg {
+  background-color: var(--tui-accent);
+}
+
+.tui-text {
+  color: var(--tui-text);
+}
+
+.tui-text-muted {
+  color: var(--tui-text-muted);
+}
+
+.terminal-bg {
+  background-color: var(--terminal-bg);
+}
+
+.terminal-text {
+  color: var(--terminal-text);
+  font-family: 'Courier New', monospace;
+}
+
+/* Terminal Animation */
+.terminal-cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Project card hover effects */
+.project-card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(243, 127, 151, 0.3);
+}
+
+.project-card:hover {
+  border-color: var(--tui-accent);
+  transform: translateY(-2px);
+}
+
+.project-card.active {
+  border-color: var(--tui-accent);
+  background-color: rgba(243, 127, 151, 0.1);
+}
